@@ -7,7 +7,7 @@ It combines the [`cryptography`](https://cryptography.io/en/latest/) library (to
 ---
 
 ## Features
-- Load a website’s certificate (`.pem` format).
+- Load a website’s certificate (`.crt` format).
 - Identify the elliptic curve used (e.g., `secp256r1`, `secp384r1`, `secp521r1`).
 - Extract the parameters a, b, p for the curve.
 
