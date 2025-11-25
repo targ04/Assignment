@@ -6,28 +6,16 @@ It combines the [`cryptography`](https://cryptography.io/en/latest/) library (to
 
 ---
 
-## 📌 Features
+## Features
 - Load a website’s certificate (`.pem` format).
 - Identify the elliptic curve used (e.g., `secp256r1`, `secp384r1`, `secp521r1`).
-- Extract the curve equation in the form:
-
-  
-
-\[
-  y^2 = x^3 + ax + b \pmod{p}
-  \]
-
-
-
-- Print the finite field characteristic (`p` for prime curves, `2` for binary curves).
+- Extract the parameters a, b, p for the curve.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-Clone the repository and install dependencies:
+Install dependencies, then clone the repo and run
 
 ```bash
-git clone https://github.com/your-username/ec-parameter-extractor.git
-cd ec-parameter-extractor
 pip install cryptography tinyec
