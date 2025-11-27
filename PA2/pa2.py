@@ -3,8 +3,8 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import ec
 from tinyec import registry
 
-# Load certificate (replace with your certificate file path)
-with open("bitspilani.crt", "rb") as f:
+# Load certificate
+with open("wikipedia.crt", "rb") as f:
     cert_data = f.read()
 
 cert = x509.load_pem_x509_certificate(cert_data, default_backend())
